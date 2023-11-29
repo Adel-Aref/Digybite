@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,16 @@
 		FE33109C2B1780C1004DB1FF /* DigybiteTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33109B2B1780C1004DB1FF /* DigybiteTaskTests.swift */; };
 		FE3310A62B1780C1004DB1FF /* DigybiteTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310A52B1780C1004DB1FF /* DigybiteTaskUITests.swift */; };
 		FE3310A82B1780C1004DB1FF /* DigybiteTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310A72B1780C1004DB1FF /* DigybiteTaskUITestsLaunchTests.swift */; };
+		FE3310BC2B1792DC004DB1FF /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310B62B1792D8004DB1FF /* APIRouter.swift */; };
+		FE3310BE2B1792DC004DB1FF /* NETWORK+ENDPOINTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310B82B1792D9004DB1FF /* NETWORK+ENDPOINTS.swift */; };
+		FE3310BF2B1792DC004DB1FF /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310B92B1792DA004DB1FF /* NetworkClient.swift */; };
+		FE3310C02B1792DC004DB1FF /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310BA2B1792DA004DB1FF /* RequestResult.swift */; };
+		FE3310C12B1792DC004DB1FF /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310BB2B1792DC004DB1FF /* EndPoint.swift */; };
+		FE3310C42B17935E004DB1FF /* RealmHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310C32B17935E004DB1FF /* RealmHandler.swift */; };
+		FE3310C62B1796FE004DB1FF /* Casher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310C52B1796FE004DB1FF /* Casher.swift */; };
+		FE3310C92B17982A004DB1FF /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE3310C82B17982A004DB1FF /* Production.xcconfig */; };
+		FE3310CB2B17990C004DB1FF /* Developement.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE3310CA2B17990C004DB1FF /* Developement.xcconfig */; };
+		FE3310CD2B17A072004DB1FF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310CC2B17A071004DB1FF /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +69,16 @@
 		FE3310A12B1780C1004DB1FF /* DigybiteTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigybiteTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3310A52B1780C1004DB1FF /* DigybiteTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigybiteTaskUITests.swift; sourceTree = "<group>"; };
 		FE3310A72B1780C1004DB1FF /* DigybiteTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigybiteTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FE3310B62B1792D8004DB1FF /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		FE3310B82B1792D9004DB1FF /* NETWORK+ENDPOINTS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NETWORK+ENDPOINTS.swift"; sourceTree = "<group>"; };
+		FE3310B92B1792DA004DB1FF /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		FE3310BA2B1792DA004DB1FF /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
+		FE3310BB2B1792DC004DB1FF /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		FE3310C32B17935E004DB1FF /* RealmHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHandler.swift; sourceTree = "<group>"; };
+		FE3310C52B1796FE004DB1FF /* Casher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Casher.swift; sourceTree = "<group>"; };
+		FE3310C82B17982A004DB1FF /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		FE3310CA2B17990C004DB1FF /* Developement.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developement.xcconfig; sourceTree = "<group>"; };
+		FE3310CC2B17A071004DB1FF /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +157,9 @@
 		FE3310832B1780C0004DB1FF /* DigybiteTask */ = {
 			isa = PBXGroup;
 			children = (
+				FE3310C72B17981D004DB1FF /* Configration */,
+				FE3310C22B17934E004DB1FF /* Cacher */,
+				FE3310B52B1792C4004DB1FF /* Network */,
 				FE3310842B1780C0004DB1FF /* AppDelegate.swift */,
 				FE3310882B1780C0004DB1FF /* ViewController.swift */,
 				FE33108A2B1780C0004DB1FF /* Main.storyboard */,
@@ -162,6 +185,37 @@
 				FE3310A72B1780C1004DB1FF /* DigybiteTaskUITestsLaunchTests.swift */,
 			);
 			path = DigybiteTaskUITests;
+			sourceTree = "<group>";
+		};
+		FE3310B52B1792C4004DB1FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310B62B1792D8004DB1FF /* APIRouter.swift */,
+				FE3310BB2B1792DC004DB1FF /* EndPoint.swift */,
+				FE3310B82B1792D9004DB1FF /* NETWORK+ENDPOINTS.swift */,
+				FE3310B92B1792DA004DB1FF /* NetworkClient.swift */,
+				FE3310BA2B1792DA004DB1FF /* RequestResult.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FE3310C22B17934E004DB1FF /* Cacher */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310C52B1796FE004DB1FF /* Casher.swift */,
+				FE3310C32B17935E004DB1FF /* RealmHandler.swift */,
+			);
+			path = Cacher;
+			sourceTree = "<group>";
+		};
+		FE3310C72B17981D004DB1FF /* Configration */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310CC2B17A071004DB1FF /* Environment.swift */,
+				FE3310C82B17982A004DB1FF /* Production.xcconfig */,
+				FE3310CA2B17990C004DB1FF /* Developement.xcconfig */,
+			);
+			path = Configration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +303,7 @@
 				};
 			};
 			buildConfigurationList = FE33107C2B1780C0004DB1FF /* Build configuration list for PBXProject "DigybiteTask" */;
-			compatibilityVersion = "Xcode 15.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -273,8 +327,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3310C92B17982A004DB1FF /* Production.xcconfig in Resources */,
 				FE3310912B1780C1004DB1FF /* LaunchScreen.storyboard in Resources */,
 				FE33108E2B1780C1004DB1FF /* Assets.xcassets in Resources */,
+				FE3310CB2B17990C004DB1FF /* Developement.xcconfig in Resources */,
 				FE33108C2B1780C0004DB1FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,8 +459,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3310C42B17935E004DB1FF /* RealmHandler.swift in Sources */,
+				FE3310C62B1796FE004DB1FF /* Casher.swift in Sources */,
+				FE3310BE2B1792DC004DB1FF /* NETWORK+ENDPOINTS.swift in Sources */,
 				FE3310892B1780C0004DB1FF /* ViewController.swift in Sources */,
+				FE3310C12B1792DC004DB1FF /* EndPoint.swift in Sources */,
+				FE3310C02B1792DC004DB1FF /* RequestResult.swift in Sources */,
+				FE3310BC2B1792DC004DB1FF /* APIRouter.swift in Sources */,
 				FE3310852B1780C0004DB1FF /* AppDelegate.swift in Sources */,
+				FE3310BF2B1792DC004DB1FF /* NetworkClient.swift in Sources */,
+				FE3310CD2B17A072004DB1FF /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +526,7 @@
 /* Begin XCBuildConfiguration section */
 		FE3310A92B1780C1004DB1FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3310CA2B17990C004DB1FF /* Developement.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -525,6 +590,7 @@
 		};
 		FE3310AA2B1780C1004DB1FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3310C82B17982A004DB1FF /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

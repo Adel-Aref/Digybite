@@ -1,0 +1,18 @@
+//
+//  Developement.xcconfig
+//  DigybiteTask
+//
+//  Created by Adel Aref on 29/11/2023.
+//
+
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Pods/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask.debug.xcconfig"
+// Server URL we will update this values as received from backend team
+Base_URL = https:/$()/api.rawg.io/api/
+API_KEY = 3be8af6ebf124ffe81d90f514e59856c
+
+// App Settings
+APP_NAME = DigybiteTask (develop)
+APP_BUNDLE_ID = com.Digybite.Task
