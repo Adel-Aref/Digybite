@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05C7E720BFAB1C7DE500942C /* Pods_DigybiteTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA4AA3A6CD6BCDC473FC077 /* Pods_DigybiteTaskTests.framework */; };
+		11B936D20762D93B82A6AFFB /* Pods_DigybiteTask_DigybiteTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A120B4148B9D6A50CBAED85C /* Pods_DigybiteTask_DigybiteTaskUITests.framework */; };
+		66762761C7D9DAE4722D51B4 /* Pods_DigybiteTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592A2763D244E6A9BDA4A6B1 /* Pods_DigybiteTask.framework */; };
+		FE3310852B1780C0004DB1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310842B1780C0004DB1FF /* AppDelegate.swift */; };
+		FE3310892B1780C0004DB1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310882B1780C0004DB1FF /* ViewController.swift */; };
+		FE33108C2B1780C0004DB1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33108A2B1780C0004DB1FF /* Main.storyboard */; };
+		FE33108E2B1780C1004DB1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE33108D2B1780C1004DB1FF /* Assets.xcassets */; };
+		FE3310912B1780C1004DB1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33108F2B1780C1004DB1FF /* LaunchScreen.storyboard */; };
+		FE33109C2B1780C1004DB1FF /* DigybiteTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE33109B2B1780C1004DB1FF /* DigybiteTaskTests.swift */; };
+		FE3310A62B1780C1004DB1FF /* DigybiteTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310A52B1780C1004DB1FF /* DigybiteTaskUITests.swift */; };
+		FE3310A82B1780C1004DB1FF /* DigybiteTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310A72B1780C1004DB1FF /* DigybiteTaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE3310982B1780C1004DB1FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE3310792B1780C0004DB1FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE3310802B1780C0004DB1FF;
+			remoteInfo = DigybiteTask;
+		};
+		FE3310A22B1780C1004DB1FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE3310792B1780C0004DB1FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE3310802B1780C0004DB1FF;
+			remoteInfo = DigybiteTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		592A2763D244E6A9BDA4A6B1 /* Pods_DigybiteTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigybiteTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70395F24E6964AB2862F75B8 /* Pods-DigybiteTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask.release.xcconfig"; path = "Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask.release.xcconfig"; sourceTree = "<group>"; };
+		82FAA31051DA9042F7AB36B2 /* Pods-DigybiteTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-DigybiteTaskTests/Pods-DigybiteTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DF154E6772A30E58543BA04 /* Pods-DigybiteTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask.debug.xcconfig"; path = "Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask.debug.xcconfig"; sourceTree = "<group>"; };
+		98733EB6EBE4F98F54A3D38E /* Pods-DigybiteTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTaskTests.release.xcconfig"; path = "Target Support Files/Pods-DigybiteTaskTests/Pods-DigybiteTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		9EA4AA3A6CD6BCDC473FC077 /* Pods_DigybiteTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigybiteTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A120B4148B9D6A50CBAED85C /* Pods_DigybiteTask_DigybiteTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigybiteTask_DigybiteTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E41FEA0AE46A5EFE6220F5 /* Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAC8E643FC49D6CA75C71E5C /* Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE3310812B1780C0004DB1FF /* DigybiteTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigybiteTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3310842B1780C0004DB1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE3310882B1780C0004DB1FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE33108B2B1780C0004DB1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE33108D2B1780C1004DB1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE3310902B1780C1004DB1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE3310922B1780C1004DB1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3310972B1780C1004DB1FF /* DigybiteTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigybiteTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE33109B2B1780C1004DB1FF /* DigybiteTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigybiteTaskTests.swift; sourceTree = "<group>"; };
+		FE3310A12B1780C1004DB1FF /* DigybiteTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigybiteTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3310A52B1780C1004DB1FF /* DigybiteTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigybiteTaskUITests.swift; sourceTree = "<group>"; };
+		FE3310A72B1780C1004DB1FF /* DigybiteTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigybiteTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE33107E2B1780C0004DB1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66762761C7D9DAE4722D51B4 /* Pods_DigybiteTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3310942B1780C1004DB1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C7E720BFAB1C7DE500942C /* Pods_DigybiteTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE33109E2B1780C1004DB1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B936D20762D93B82A6AFFB /* Pods_DigybiteTask_DigybiteTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71006DDA3F03FB28048E851C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				592A2763D244E6A9BDA4A6B1 /* Pods_DigybiteTask.framework */,
+				A120B4148B9D6A50CBAED85C /* Pods_DigybiteTask_DigybiteTaskUITests.framework */,
+				9EA4AA3A6CD6BCDC473FC077 /* Pods_DigybiteTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73E446FA1C0DAFE4FE7C863A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DF154E6772A30E58543BA04 /* Pods-DigybiteTask.debug.xcconfig */,
+				70395F24E6964AB2862F75B8 /* Pods-DigybiteTask.release.xcconfig */,
+				B6E41FEA0AE46A5EFE6220F5 /* Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig */,
+				EAC8E643FC49D6CA75C71E5C /* Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig */,
+				82FAA31051DA9042F7AB36B2 /* Pods-DigybiteTaskTests.debug.xcconfig */,
+				98733EB6EBE4F98F54A3D38E /* Pods-DigybiteTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE3310782B1780C0004DB1FF = {
+			isa = PBXGroup;
+			children = (
+				FE3310832B1780C0004DB1FF /* DigybiteTask */,
+				FE33109A2B1780C1004DB1FF /* DigybiteTaskTests */,
+				FE3310A42B1780C1004DB1FF /* DigybiteTaskUITests */,
+				FE3310822B1780C0004DB1FF /* Products */,
+				73E446FA1C0DAFE4FE7C863A /* Pods */,
+				71006DDA3F03FB28048E851C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE3310822B1780C0004DB1FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310812B1780C0004DB1FF /* DigybiteTask.app */,
+				FE3310972B1780C1004DB1FF /* DigybiteTaskTests.xctest */,
+				FE3310A12B1780C1004DB1FF /* DigybiteTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE3310832B1780C0004DB1FF /* DigybiteTask */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310842B1780C0004DB1FF /* AppDelegate.swift */,
+				FE3310882B1780C0004DB1FF /* ViewController.swift */,
+				FE33108A2B1780C0004DB1FF /* Main.storyboard */,
+				FE33108D2B1780C1004DB1FF /* Assets.xcassets */,
+				FE33108F2B1780C1004DB1FF /* LaunchScreen.storyboard */,
+				FE3310922B1780C1004DB1FF /* Info.plist */,
+			);
+			path = DigybiteTask;
+			sourceTree = "<group>";
+		};
+		FE33109A2B1780C1004DB1FF /* DigybiteTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE33109B2B1780C1004DB1FF /* DigybiteTaskTests.swift */,
+			);
+			path = DigybiteTaskTests;
+			sourceTree = "<group>";
+		};
+		FE3310A42B1780C1004DB1FF /* DigybiteTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310A52B1780C1004DB1FF /* DigybiteTaskUITests.swift */,
+				FE3310A72B1780C1004DB1FF /* DigybiteTaskUITestsLaunchTests.swift */,
+			);
+			path = DigybiteTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE3310802B1780C0004DB1FF /* DigybiteTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE3310AB2B1780C1004DB1FF /* Build configuration list for PBXNativeTarget "DigybiteTask" */;
+			buildPhases = (
+				70E971B1BF5AAF3D0072D92E /* [CP] Check Pods Manifest.lock */,
+				FE33107D2B1780C0004DB1FF /* Sources */,
+				FE33107E2B1780C0004DB1FF /* Frameworks */,
+				FE33107F2B1780C0004DB1FF /* Resources */,
+				E5F35A58C2D8A9005BE3809F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigybiteTask;
+			productName = DigybiteTask;
+			productReference = FE3310812B1780C0004DB1FF /* DigybiteTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE3310962B1780C1004DB1FF /* DigybiteTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE3310AE2B1780C1004DB1FF /* Build configuration list for PBXNativeTarget "DigybiteTaskTests" */;
+			buildPhases = (
+				70D26A60E455F8ADB8A8AD39 /* [CP] Check Pods Manifest.lock */,
+				FE3310932B1780C1004DB1FF /* Sources */,
+				FE3310942B1780C1004DB1FF /* Frameworks */,
+				FE3310952B1780C1004DB1FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE3310992B1780C1004DB1FF /* PBXTargetDependency */,
+			);
+			name = DigybiteTaskTests;
+			productName = DigybiteTaskTests;
+			productReference = FE3310972B1780C1004DB1FF /* DigybiteTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE3310A02B1780C1004DB1FF /* DigybiteTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE3310B12B1780C1004DB1FF /* Build configuration list for PBXNativeTarget "DigybiteTaskUITests" */;
+			buildPhases = (
+				EFB600D597BE0BB553226DC0 /* [CP] Check Pods Manifest.lock */,
+				FE33109D2B1780C1004DB1FF /* Sources */,
+				FE33109E2B1780C1004DB1FF /* Frameworks */,
+				FE33109F2B1780C1004DB1FF /* Resources */,
+				3C4427A346A7A564A528B7AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE3310A32B1780C1004DB1FF /* PBXTargetDependency */,
+			);
+			name = DigybiteTaskUITests;
+			productName = DigybiteTaskUITests;
+			productReference = FE3310A12B1780C1004DB1FF /* DigybiteTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE3310792B1780C0004DB1FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FE3310802B1780C0004DB1FF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FE3310962B1780C1004DB1FF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FE3310802B1780C0004DB1FF;
+					};
+					FE3310A02B1780C1004DB1FF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FE3310802B1780C0004DB1FF;
+					};
+				};
+			};
+			buildConfigurationList = FE33107C2B1780C0004DB1FF /* Build configuration list for PBXProject "DigybiteTask" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE3310782B1780C0004DB1FF;
+			productRefGroup = FE3310822B1780C0004DB1FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE3310802B1780C0004DB1FF /* DigybiteTask */,
+				FE3310962B1780C1004DB1FF /* DigybiteTaskTests */,
+				FE3310A02B1780C1004DB1FF /* DigybiteTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE33107F2B1780C0004DB1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3310912B1780C1004DB1FF /* LaunchScreen.storyboard in Resources */,
+				FE33108E2B1780C1004DB1FF /* Assets.xcassets in Resources */,
+				FE33108C2B1780C0004DB1FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3310952B1780C1004DB1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE33109F2B1780C1004DB1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C4427A346A7A564A528B7AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70D26A60E455F8ADB8A8AD39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigybiteTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E971B1BF5AAF3D0072D92E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigybiteTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5F35A58C2D8A9005BE3809F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB600D597BE0BB553226DC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigybiteTask-DigybiteTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE33107D2B1780C0004DB1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3310892B1780C0004DB1FF /* ViewController.swift in Sources */,
+				FE3310852B1780C0004DB1FF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3310932B1780C1004DB1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE33109C2B1780C1004DB1FF /* DigybiteTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE33109D2B1780C1004DB1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3310A82B1780C1004DB1FF /* DigybiteTaskUITestsLaunchTests.swift in Sources */,
+				FE3310A62B1780C1004DB1FF /* DigybiteTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE3310992B1780C1004DB1FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE3310802B1780C0004DB1FF /* DigybiteTask */;
+			targetProxy = FE3310982B1780C1004DB1FF /* PBXContainerItemProxy */;
+		};
+		FE3310A32B1780C1004DB1FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE3310802B1780C0004DB1FF /* DigybiteTask */;
+			targetProxy = FE3310A22B1780C1004DB1FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE33108A2B1780C0004DB1FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE33108B2B1780C0004DB1FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE33108F2B1780C1004DB1FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE3310902B1780C1004DB1FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE3310A92B1780C1004DB1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE3310AA2B1780C1004DB1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE3310AC2B1780C1004DB1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF154E6772A30E58543BA04 /* Pods-DigybiteTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigybiteTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Digybite.task.com.DigybiteTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE3310AD2B1780C1004DB1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70395F24E6964AB2862F75B8 /* Pods-DigybiteTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigybiteTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Digybite.task.com.DigybiteTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE3310AF2B1780C1004DB1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82FAA31051DA9042F7AB36B2 /* Pods-DigybiteTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Digybite.task.com.DigybiteTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigybiteTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigybiteTask";
+			};
+			name = Debug;
+		};
+		FE3310B02B1780C1004DB1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98733EB6EBE4F98F54A3D38E /* Pods-DigybiteTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Digybite.task.com.DigybiteTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigybiteTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigybiteTask";
+			};
+			name = Release;
+		};
+		FE3310B22B1780C1004DB1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6E41FEA0AE46A5EFE6220F5 /* Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Digybite.task.com.DigybiteTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigybiteTask;
+			};
+			name = Debug;
+		};
+		FE3310B32B1780C1004DB1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC8E643FC49D6CA75C71E5C /* Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Digybite.task.com.DigybiteTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigybiteTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE33107C2B1780C0004DB1FF /* Build configuration list for PBXProject "DigybiteTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3310A92B1780C1004DB1FF /* Debug */,
+				FE3310AA2B1780C1004DB1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE3310AB2B1780C1004DB1FF /* Build configuration list for PBXNativeTarget "DigybiteTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3310AC2B1780C1004DB1FF /* Debug */,
+				FE3310AD2B1780C1004DB1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE3310AE2B1780C1004DB1FF /* Build configuration list for PBXNativeTarget "DigybiteTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3310AF2B1780C1004DB1FF /* Debug */,
+				FE3310B02B1780C1004DB1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE3310B12B1780C1004DB1FF /* Build configuration list for PBXNativeTarget "DigybiteTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3310B22B1780C1004DB1FF /* Debug */,
+				FE3310B32B1780C1004DB1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE3310792B1780C0004DB1FF /* Project object */;
+}
