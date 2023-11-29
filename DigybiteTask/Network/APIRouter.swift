@@ -54,7 +54,6 @@ extension APIRouter {
                                          completion: @escaping JSONTaskCompletionHandler) where T: Codable {
         do {
             var genericModel = try JSONDecoder().decode(decodingType, from: jsonObject)
-            genericModel.fileName = String(describing: T.self)
             completion(.success(genericModel))
         } catch {
             completion(.failure(.jsonConversionFailure))

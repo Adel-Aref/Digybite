@@ -24,7 +24,6 @@
 		FE3310C02B1792DC004DB1FF /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310BA2B1792DA004DB1FF /* RequestResult.swift */; };
 		FE3310C12B1792DC004DB1FF /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310BB2B1792DC004DB1FF /* EndPoint.swift */; };
 		FE3310C42B17935E004DB1FF /* RealmHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310C32B17935E004DB1FF /* RealmHandler.swift */; };
-		FE3310C62B1796FE004DB1FF /* Casher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310C52B1796FE004DB1FF /* Casher.swift */; };
 		FE3310C92B17982A004DB1FF /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE3310C82B17982A004DB1FF /* Production.xcconfig */; };
 		FE3310CB2B17990C004DB1FF /* Developement.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE3310CA2B17990C004DB1FF /* Developement.xcconfig */; };
 		FE3310CD2B17A072004DB1FF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310CC2B17A071004DB1FF /* Environment.swift */; };
@@ -75,7 +74,6 @@
 		FE3310BA2B1792DA004DB1FF /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
 		FE3310BB2B1792DC004DB1FF /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		FE3310C32B17935E004DB1FF /* RealmHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHandler.swift; sourceTree = "<group>"; };
-		FE3310C52B1796FE004DB1FF /* Casher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Casher.swift; sourceTree = "<group>"; };
 		FE3310C82B17982A004DB1FF /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		FE3310CA2B17990C004DB1FF /* Developement.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developement.xcconfig; sourceTree = "<group>"; };
 		FE3310CC2B17A071004DB1FF /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 		FE3310C22B17934E004DB1FF /* Cacher */ = {
 			isa = PBXGroup;
 			children = (
-				FE3310C52B1796FE004DB1FF /* Casher.swift */,
 				FE3310C32B17935E004DB1FF /* RealmHandler.swift */,
 			);
 			path = Cacher;
@@ -460,7 +457,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3310C42B17935E004DB1FF /* RealmHandler.swift in Sources */,
-				FE3310C62B1796FE004DB1FF /* Casher.swift in Sources */,
 				FE3310BE2B1792DC004DB1FF /* NETWORK+ENDPOINTS.swift in Sources */,
 				FE3310892B1780C0004DB1FF /* ViewController.swift in Sources */,
 				FE3310C12B1792DC004DB1FF /* EndPoint.swift in Sources */,
