@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="StarterProject" customModuleProvider="target">
+            <connections>
+                <outlet property="animateView" destination="y03-XA-wDe" id="9Hi-el-T3i"/>
+                <outlet property="containerView" destination="sSO-vo-uW1" id="t3q-gz-gbX"/>
+                <outlet property="messageLabel" destination="y1Q-Hn-Ds4" id="e4M-Ww-feI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sSO-vo-uW1">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y1Q-Hn-Ds4">
+                    <rect key="frame" x="45" y="146.5" width="60" height="20"/>
+                    <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y03-XA-wDe" customClass="AnimateloadingView" customModule="Silicon21" customModuleProvider="target">
+                    <rect key="frame" x="37.5" y="59.5" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="y03-XA-wDe" secondAttribute="height" multiplier="1:1" id="CUM-dJ-g0C"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="3if-4Z-nn1"/>
+            <constraints>
+                <constraint firstItem="y03-XA-wDe" firstAttribute="centerX" secondItem="3if-4Z-nn1" secondAttribute="centerX" id="CZp-gG-UAW"/>
+                <constraint firstItem="y03-XA-wDe" firstAttribute="width" secondItem="sSO-vo-uW1" secondAttribute="width" multiplier="0.5" id="Si6-KZ-eYn"/>
+                <constraint firstItem="y1Q-Hn-Ds4" firstAttribute="centerX" secondItem="3if-4Z-nn1" secondAttribute="centerX" id="mlV-1C-Pm0"/>
+                <constraint firstItem="y1Q-Hn-Ds4" firstAttribute="top" secondItem="y03-XA-wDe" secondAttribute="bottom" constant="12" id="ogX-VB-U7h"/>
+                <constraint firstItem="y03-XA-wDe" firstAttribute="centerY" secondItem="3if-4Z-nn1" secondAttribute="centerY" id="t2g-DM-DwS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-87" y="-223"/>
+        </view>
+    </objects>
+</document>

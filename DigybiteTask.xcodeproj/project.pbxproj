@@ -27,6 +27,15 @@
 		FE3310C92B17982A004DB1FF /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE3310C82B17982A004DB1FF /* Production.xcconfig */; };
 		FE3310CB2B17990C004DB1FF /* Developement.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE3310CA2B17990C004DB1FF /* Developement.xcconfig */; };
 		FE3310CD2B17A072004DB1FF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310CC2B17A071004DB1FF /* Environment.swift */; };
+		FE3310D12B17A2F0004DB1FF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310CF2B17A2F0004DB1FF /* Repository.swift */; };
+		FE3310D22B17A2F0004DB1FF /* DigybiteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310D02B17A2F0004DB1FF /* DigybiteResponse.swift */; };
+		FE3310D52B17A43A004DB1FF /* UIApplicatio+topView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310D42B17A43A004DB1FF /* UIApplicatio+topView.swift */; };
+		FE3310DE2B17A690004DB1FF /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE3310D92B17A68E004DB1FF /* LoadingView.xib */; };
+		FE3310DF2B17A690004DB1FF /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310DA2B17A68F004DB1FF /* IndicatorView.swift */; };
+		FE3310E02B17A690004DB1FF /* LoadingViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310DB2B17A68F004DB1FF /* LoadingViewable.swift */; };
+		FE3310E12B17A690004DB1FF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310DC2B17A68F004DB1FF /* LoadingView.swift */; };
+		FE3310E22B17A690004DB1FF /* AnimateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310DD2B17A690004DB1FF /* AnimateLoadingView.swift */; };
+		FE3310E42B17A6AD004DB1FF /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310E32B17A6AD004DB1FF /* BaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +86,15 @@
 		FE3310C82B17982A004DB1FF /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		FE3310CA2B17990C004DB1FF /* Developement.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developement.xcconfig; sourceTree = "<group>"; };
 		FE3310CC2B17A071004DB1FF /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		FE3310CF2B17A2F0004DB1FF /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FE3310D02B17A2F0004DB1FF /* DigybiteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigybiteResponse.swift; sourceTree = "<group>"; };
+		FE3310D42B17A43A004DB1FF /* UIApplicatio+topView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplicatio+topView.swift"; sourceTree = "<group>"; };
+		FE3310D92B17A68E004DB1FF /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		FE3310DA2B17A68F004DB1FF /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		FE3310DB2B17A68F004DB1FF /* LoadingViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewable.swift; sourceTree = "<group>"; };
+		FE3310DC2B17A68F004DB1FF /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		FE3310DD2B17A690004DB1FF /* AnimateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateLoadingView.swift; sourceTree = "<group>"; };
+		FE3310E32B17A6AD004DB1FF /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +176,11 @@
 				FE3310C72B17981D004DB1FF /* Configration */,
 				FE3310C22B17934E004DB1FF /* Cacher */,
 				FE3310B52B1792C4004DB1FF /* Network */,
+				FE3310CE2B17A2D2004DB1FF /* Repository */,
+				FE3310D62B17A61B004DB1FF /* Features */,
+				FE3310D32B17A41C004DB1FF /* Extentions */,
+				FE3310D82B17A672004DB1FF /* Helper */,
+				FE3310D72B17A661004DB1FF /* LoadingView */,
 				FE3310842B1780C0004DB1FF /* AppDelegate.swift */,
 				FE3310882B1780C0004DB1FF /* ViewController.swift */,
 				FE33108A2B1780C0004DB1FF /* Main.storyboard */,
@@ -208,11 +231,55 @@
 		FE3310C72B17981D004DB1FF /* Configration */ = {
 			isa = PBXGroup;
 			children = (
-				FE3310CC2B17A071004DB1FF /* Environment.swift */,
 				FE3310C82B17982A004DB1FF /* Production.xcconfig */,
 				FE3310CA2B17990C004DB1FF /* Developement.xcconfig */,
 			);
 			path = Configration;
+			sourceTree = "<group>";
+		};
+		FE3310CE2B17A2D2004DB1FF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310CC2B17A071004DB1FF /* Environment.swift */,
+				FE3310D02B17A2F0004DB1FF /* DigybiteResponse.swift */,
+				FE3310CF2B17A2F0004DB1FF /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FE3310D32B17A41C004DB1FF /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310D42B17A43A004DB1FF /* UIApplicatio+topView.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		FE3310D62B17A61B004DB1FF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FE3310D72B17A661004DB1FF /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310DD2B17A690004DB1FF /* AnimateLoadingView.swift */,
+				FE3310DA2B17A68F004DB1FF /* IndicatorView.swift */,
+				FE3310DC2B17A68F004DB1FF /* LoadingView.swift */,
+				FE3310D92B17A68E004DB1FF /* LoadingView.xib */,
+				FE3310DB2B17A68F004DB1FF /* LoadingViewable.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		FE3310D82B17A672004DB1FF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FE3310E32B17A6AD004DB1FF /* BaseController.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +394,7 @@
 				FE3310C92B17982A004DB1FF /* Production.xcconfig in Resources */,
 				FE3310912B1780C1004DB1FF /* LaunchScreen.storyboard in Resources */,
 				FE33108E2B1780C1004DB1FF /* Assets.xcassets in Resources */,
+				FE3310DE2B17A690004DB1FF /* LoadingView.xib in Resources */,
 				FE3310CB2B17990C004DB1FF /* Developement.xcconfig in Resources */,
 				FE33108C2B1780C0004DB1FF /* Main.storyboard in Resources */,
 			);
@@ -458,12 +526,20 @@
 			files = (
 				FE3310C42B17935E004DB1FF /* RealmHandler.swift in Sources */,
 				FE3310BE2B1792DC004DB1FF /* NETWORK+ENDPOINTS.swift in Sources */,
+				FE3310D22B17A2F0004DB1FF /* DigybiteResponse.swift in Sources */,
+				FE3310E02B17A690004DB1FF /* LoadingViewable.swift in Sources */,
+				FE3310DF2B17A690004DB1FF /* IndicatorView.swift in Sources */,
 				FE3310892B1780C0004DB1FF /* ViewController.swift in Sources */,
 				FE3310C12B1792DC004DB1FF /* EndPoint.swift in Sources */,
+				FE3310E42B17A6AD004DB1FF /* BaseController.swift in Sources */,
 				FE3310C02B1792DC004DB1FF /* RequestResult.swift in Sources */,
+				FE3310E12B17A690004DB1FF /* LoadingView.swift in Sources */,
 				FE3310BC2B1792DC004DB1FF /* APIRouter.swift in Sources */,
 				FE3310852B1780C0004DB1FF /* AppDelegate.swift in Sources */,
+				FE3310E22B17A690004DB1FF /* AnimateLoadingView.swift in Sources */,
+				FE3310D12B17A2F0004DB1FF /* Repository.swift in Sources */,
 				FE3310BF2B1792DC004DB1FF /* NetworkClient.swift in Sources */,
+				FE3310D52B17A43A004DB1FF /* UIApplicatio+topView.swift in Sources */,
 				FE3310CD2B17A072004DB1FF /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

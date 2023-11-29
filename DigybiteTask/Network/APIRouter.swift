@@ -6,13 +6,12 @@
 //
 
 import Foundation
-
 import Alamofire
-// swiftlint:disable all
+
 protocol APIRouter {
     func makeRequest<T: Codable>(withRequest: URLRequest,
                                   decodingType: T.Type,
-                                  completion: @escaping JSONTaskCompletionHandler)  where T: Codable
+                                  completion: @escaping JSONTaskCompletionHandler)
 }
 
 extension APIRouter {
@@ -20,7 +19,7 @@ extension APIRouter {
     
     func makeRequest<T: Codable>(withRequest: URLRequest,
                                   decodingType: T.Type,
-                                  completion: @escaping JSONTaskCompletionHandler)  where T: Codable {
+                                 completion: @escaping JSONTaskCompletionHandler) {
         AF.request(withRequest)
             .responseJSON(completionHandler: { (response) in
                 if let error = response.error {
@@ -53,7 +52,7 @@ extension APIRouter {
                                          jsonObject: Data,
                                          completion: @escaping JSONTaskCompletionHandler) where T: Codable {
         do {
-            var genericModel = try JSONDecoder().decode(decodingType, from: jsonObject)
+            let genericModel = try JSONDecoder().decode(decodingType, from: jsonObject)
             completion(.success(genericModel))
         } catch {
             completion(.failure(.jsonConversionFailure))
