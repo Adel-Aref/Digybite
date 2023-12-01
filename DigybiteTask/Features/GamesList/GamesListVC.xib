@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GamesListVC" customModule="DigybiteTask" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="b8R-Pg-TDX" customClass="HomeViewController" customModule="EvaPharmaTask" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="Skd-0w-yoa">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S8D-G9-czu">
+                        <rect key="frame" x="128" y="75" width="137" height="32"/>
+                        <segments>
+                            <segment title="List"/>
+                            <segment title="Favorite"/>
+                        </segments>
+                    </segmentedControl>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tOf-kJ-fX7">
+                        <rect key="frame" x="16" y="122" width="361" height="680"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="6Bd-vj-9Mv"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="tOf-kJ-fX7" firstAttribute="top" secondItem="S8D-G9-czu" secondAttribute="bottom" constant="16" id="73x-a0-z2y"/>
+                    <constraint firstItem="6Bd-vj-9Mv" firstAttribute="bottom" secondItem="tOf-kJ-fX7" secondAttribute="bottom" constant="16" id="FHV-yr-2h6"/>
+                    <constraint firstItem="tOf-kJ-fX7" firstAttribute="leading" secondItem="6Bd-vj-9Mv" secondAttribute="leading" constant="16" id="V0g-ni-g8F"/>
+                    <constraint firstItem="S8D-G9-czu" firstAttribute="top" secondItem="6Bd-vj-9Mv" secondAttribute="top" constant="16" id="YGx-ex-70u"/>
+                    <constraint firstItem="S8D-G9-czu" firstAttribute="centerX" secondItem="Skd-0w-yoa" secondAttribute="centerX" id="w30-ld-be1"/>
+                    <constraint firstItem="6Bd-vj-9Mv" firstAttribute="trailing" secondItem="tOf-kJ-fX7" secondAttribute="trailing" constant="16" id="zi7-fU-x8e"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="-131" y="58"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

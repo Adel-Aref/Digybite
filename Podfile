@@ -4,21 +4,22 @@
 target 'DigybiteTask' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for DigybiteTask
-	pod 'Alamofire'
-	pod 'RealmSwift', '~>10'
-	pod 'SDWebImage'
-
+  pod 'Alamofire'
+  pod 'RealmSwift', '10.14.0'
+  pod 'SDWebImage'
+  pod 'RxSwift' , '6.2.0'
+  pod 'RxSwift'
   target 'DigybiteTaskTests' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
   target 'DigybiteTaskUITests' do
     # Pods for testing
   end
-
+  
 end
 
 
@@ -39,10 +40,10 @@ post_install do |installer|
     end
   end
   installer.generated_projects.each do |project|
-        project.targets.each do |target|
-             target.build_configurations.each do |config|
-                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
-             end
-        end
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      end
+    end
   end
 end

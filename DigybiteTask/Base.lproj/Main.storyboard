@@ -1,24 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameListViewController" id="BYZ-38-t0r" customClass="GameListViewController" customModule="DigybiteTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vZf-DE-OMr">
+                                <rect key="frame" x="81" y="67" width="231" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="gUS-oc-K1O"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="List"/>
+                                    <segment title="Favorite"/>
+                                </segments>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gYh-yU-MzU">
+                                <rect key="frame" x="16" y="114" width="361" height="722"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="hJK-hA-RAC">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="58"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hr3-4z-lHL">
+                                        <rect key="frame" x="0.0" y="66" width="361" height="656"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gYh-yU-MzU" firstAttribute="top" secondItem="vZf-DE-OMr" secondAttribute="bottom" constant="16" id="LKl-QI-NAR"/>
+                            <constraint firstItem="vZf-DE-OMr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nh4-Sr-5GD"/>
+                            <constraint firstAttribute="bottom" secondItem="gYh-yU-MzU" secondAttribute="bottom" constant="16" id="Rpb-sv-f2L"/>
+                            <constraint firstItem="gYh-yU-MzU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ur1-9u-gXZ"/>
+                            <constraint firstAttribute="trailing" secondItem="gYh-yU-MzU" secondAttribute="trailing" constant="16" id="jqc-x9-6Mh"/>
+                            <constraint firstItem="vZf-DE-OMr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="xXg-4J-KXK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="hJK-hA-RAC" id="lFO-re-DuX"/>
+                        <outlet property="segmentedControl" destination="vZf-DE-OMr" id="tIT-KI-PAE"/>
+                        <outlet property="tableView" destination="hr3-4z-lHL" id="ucd-zT-7If"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="31" y="-42"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

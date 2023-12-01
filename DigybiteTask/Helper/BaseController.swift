@@ -13,6 +13,11 @@ class BaseController: UIViewController {
         super.viewDidLoad()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     @IBAction func popViewController(_ sender: Any) {
         if let navigationController = self.navigationController {
             navigationController.popViewController(animated: true)

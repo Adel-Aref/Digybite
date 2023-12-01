@@ -9,11 +9,13 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let homeVC = GameListViewController.instantiate(fromAppStoryboard: .main)
+        let navController = UINavigationController(rootViewController: homeVC)
+        window?.rootViewController = navController
         return true
     }
-
 }
 

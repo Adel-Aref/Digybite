@@ -12,7 +12,6 @@ import Alamofire
 protocol Repository {
     var networkClient: APIRouter { get }
     func getData<T: Codable>(withRequest: URLRequest,
-                              name: String?,
                               decodingType: T.Type,
                               completion: @escaping RepositoryCompletion)
 }
@@ -20,7 +19,6 @@ protocol Repository {
 extension Repository {
     typealias RepositoryCompletion = (RequestResult<Codable, RequestError>) -> Void
     func getData<T: Codable>(withRequest: URLRequest,
-                              name: String?,
                               decodingType: T.Type,
                              completion: @escaping RepositoryCompletion) {
         networkClient.makeRequest(withRequest: withRequest, decodingType: decodingType) { (result) in
@@ -33,6 +31,8 @@ extension Repository {
                 showAlertConnectionError(withMessege: "No Internet connection.")
             case .failure(.jsonConversionFailure):
                 print("jsonConversionFailure")
+            case .failure(.authorizationError):
+                showAlertConnectionError(withMessege: "Invalid page")
             default :
                 completion(.failure(.invalidRequest))
                 return

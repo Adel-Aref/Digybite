@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DigybiteResponse<T: Codable> {
+struct DigybiteResponse<T: Codable>: Codable {
     var count: Int?
     var next: String?
     var previous: String?

@@ -54,7 +54,8 @@ extension APIRouter {
         do {
             let genericModel = try JSONDecoder().decode(decodingType, from: jsonObject)
             completion(.success(genericModel))
-        } catch {
+        } catch(let error) {
+            print("eee \(error)")
             completion(.failure(.jsonConversionFailure))
         }
     }
