@@ -5,7 +5,7 @@ TODO: DigybiteApp is a simple App consists of three screens list, favorite and d
 TODO: to build and run the app please make sure that you have the following setup 
 1- swift 4.2
 2- Mac M1 (in case of Intel ship please remove arm64 from xCode project build settings and aslo from Podfile spesc)
- 
+ 3- install cocoapods in your machine and run this command in terminal "pod install"
  
 # Architecture and Libraries
 TODO: my app Architecture and technical descions as follow
