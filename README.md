@@ -25,6 +25,7 @@ TODO: my app Architecture and technical descions as follow
  2- network layer
  3- change game background in favorite list
  4- two schemes for handling develop and release modes
+ 5- Offline first approach
  
  
  
