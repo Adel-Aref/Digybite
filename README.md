@@ -1,14 +1,14 @@
 # Introduction 
-TODO: DigybiteApp is a simple App consists of three screens list, favorite and details screen of fetched games from a remote API, to evaluate some points in iOS development like clean architecture, SOLID, local storage and unit test. 
+ DigybiteApp is a simple App consists of three screens list, favorite and details screen of fetched games from a remote API, to evaluate some points in iOS development like clean architecture, SOLID, local storage and unit test. 
 
 # Build and Test
-TODO: to build and run the app please make sure that you have the following setup 
+ to build and run the app please make sure that you have the following setup 
 1- swift 4.2
 2- Mac M1 (in case of Intel ship please remove arm64 from xCode project build settings and aslo from Podfile spesc)
  3- install cocoapods in your machine and run this command in terminal "pod install"
  
 # Architecture and Libraries
-TODO: my app Architecture and technical descions as follow
+ my app Architecture and technical descions as follow
 
 1-  MVVM with RX bindings design architecture for it's testability and resuabilty 
 2-  repository design pattern 
