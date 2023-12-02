@@ -21,7 +21,7 @@ TODO: my app Architecture and technical descions as follow
 *************************************************** 
  I added the features and added some bouns like 
  
- 1- expanding description in details screen 
+ 1- expanding description in details screen "See More"  
  2- network layer
  3- change game background in favorite list
  4- two schemes for handling develop and release modes
