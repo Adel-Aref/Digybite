@@ -9,7 +9,7 @@ target 'DigybiteTask' do
   pod 'Alamofire'
   pod 'SDWebImage'
   pod 'RxSwift' , '6.2.0'
-  pod 'RxSwift'
+
   target 'DigybiteTaskTests' do
     inherit! :search_paths
     # Pods for testing

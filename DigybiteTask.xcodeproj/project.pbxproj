@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11F967419BF0F959F953CE89 /* Pods_DigybiteTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C602855460F63E0D7453DECE /* Pods_DigybiteTask.framework */; };
-		55D1C933964803690B1B717B /* Pods_DigybiteTask_DigybiteTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0875F3CAF420F7144E5402E /* Pods_DigybiteTask_DigybiteTaskUITests.framework */; };
-		9287761D674263B998A1A1F9 /* Pods_DigybiteTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D073E05772D0D290C065D747 /* Pods_DigybiteTaskTests.framework */; };
+		D17822D1AF46F3D99C19450C /* Pods_DigybiteTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1C522D488CA3AB3E3821A5 /* Pods_DigybiteTask.framework */; };
+		DD93EEE382096990D370889D /* Pods_DigybiteTask_DigybiteTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C823C2D502681AEEEA8B54C /* Pods_DigybiteTask_DigybiteTaskUITests.framework */; };
+		FD678C4E674183872955248B /* Pods_DigybiteTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C196B5AF89413209DDE91A /* Pods_DigybiteTaskTests.framework */; };
 		FE064BFA2B1919500085E2CF /* UIimageView+setupImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE064BF92B1919500085E2CF /* UIimageView+setupImage.swift */; };
 		FE064BFC2B1920C70085E2CF /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE064BFB2B1920C70085E2CF /* Designable.swift */; };
 		FE3310852B1780C0004DB1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310842B1780C0004DB1FF /* AppDelegate.swift */; };
@@ -76,15 +76,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		72DE91095C43F83022940738 /* Pods-DigybiteTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTaskTests.release.xcconfig"; path = "Target Support Files/Pods-DigybiteTaskTests/Pods-DigybiteTaskTests.release.xcconfig"; sourceTree = "<group>"; };
-		AA28A7A258349CA059F96442 /* Pods-DigybiteTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask.debug.xcconfig"; path = "Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask.debug.xcconfig"; sourceTree = "<group>"; };
-		B236BA994067086DC03FF450 /* Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C602855460F63E0D7453DECE /* Pods_DigybiteTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigybiteTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D073E05772D0D290C065D747 /* Pods_DigybiteTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigybiteTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED5CAF17B67C71ECC7941F11 /* Pods-DigybiteTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-DigybiteTaskTests/Pods-DigybiteTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F0875F3CAF420F7144E5402E /* Pods_DigybiteTask_DigybiteTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigybiteTask_DigybiteTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6147261776C1E02CC4FF385 /* Pods-DigybiteTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask.release.xcconfig"; path = "Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask.release.xcconfig"; sourceTree = "<group>"; };
-		FB7D2B207816864A377BF8B8 /* Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		49CB36C172BD00ED56080B8F /* Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D4EBE120A1CFEA12CE4A726 /* Pods-DigybiteTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask.debug.xcconfig"; path = "Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask.debug.xcconfig"; sourceTree = "<group>"; };
+		68C196B5AF89413209DDE91A /* Pods_DigybiteTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigybiteTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		824F06190893250C760A2770 /* Pods-DigybiteTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTaskTests.release.xcconfig"; path = "Target Support Files/Pods-DigybiteTaskTests/Pods-DigybiteTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C823C2D502681AEEEA8B54C /* Pods_DigybiteTask_DigybiteTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigybiteTask_DigybiteTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28BC68E68355AF92924D2D4 /* Pods-DigybiteTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-DigybiteTaskTests/Pods-DigybiteTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2D5B1F5C38C2050351A174E /* Pods-DigybiteTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask.release.xcconfig"; path = "Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask.release.xcconfig"; sourceTree = "<group>"; };
+		C5712830CCF31C54E18DEE99 /* Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB1C522D488CA3AB3E3821A5 /* Pods_DigybiteTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigybiteTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE064BF92B1919500085E2CF /* UIimageView+setupImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimageView+setupImage.swift"; sourceTree = "<group>"; };
 		FE064BFB2B1920C70085E2CF /* Designable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
 		FE3310812B1780C0004DB1FF /* DigybiteTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigybiteTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F967419BF0F959F953CE89 /* Pods_DigybiteTask.framework in Frameworks */,
+				D17822D1AF46F3D99C19450C /* Pods_DigybiteTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9287761D674263B998A1A1F9 /* Pods_DigybiteTaskTests.framework in Frameworks */,
+				FD678C4E674183872955248B /* Pods_DigybiteTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,19 +158,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55D1C933964803690B1B717B /* Pods_DigybiteTask_DigybiteTaskUITests.framework in Frameworks */,
+				DD93EEE382096990D370889D /* Pods_DigybiteTask_DigybiteTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43464B81B45029F2F54A1F02 /* Frameworks */ = {
+		5ED25AEC97BE9FA563ECDF99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C602855460F63E0D7453DECE /* Pods_DigybiteTask.framework */,
-				F0875F3CAF420F7144E5402E /* Pods_DigybiteTask_DigybiteTaskUITests.framework */,
-				D073E05772D0D290C065D747 /* Pods_DigybiteTaskTests.framework */,
+				FB1C522D488CA3AB3E3821A5 /* Pods_DigybiteTask.framework */,
+				9C823C2D502681AEEEA8B54C /* Pods_DigybiteTask_DigybiteTaskUITests.framework */,
+				68C196B5AF89413209DDE91A /* Pods_DigybiteTaskTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,12 +178,12 @@
 		73E446FA1C0DAFE4FE7C863A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AA28A7A258349CA059F96442 /* Pods-DigybiteTask.debug.xcconfig */,
-				F6147261776C1E02CC4FF385 /* Pods-DigybiteTask.release.xcconfig */,
-				B236BA994067086DC03FF450 /* Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig */,
-				FB7D2B207816864A377BF8B8 /* Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig */,
-				ED5CAF17B67C71ECC7941F11 /* Pods-DigybiteTaskTests.debug.xcconfig */,
-				72DE91095C43F83022940738 /* Pods-DigybiteTaskTests.release.xcconfig */,
+				5D4EBE120A1CFEA12CE4A726 /* Pods-DigybiteTask.debug.xcconfig */,
+				B2D5B1F5C38C2050351A174E /* Pods-DigybiteTask.release.xcconfig */,
+				C5712830CCF31C54E18DEE99 /* Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig */,
+				49CB36C172BD00ED56080B8F /* Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig */,
+				B28BC68E68355AF92924D2D4 /* Pods-DigybiteTaskTests.debug.xcconfig */,
+				824F06190893250C760A2770 /* Pods-DigybiteTaskTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 				FE3310A42B1780C1004DB1FF /* DigybiteTaskUITests */,
 				FE3310822B1780C0004DB1FF /* Products */,
 				73E446FA1C0DAFE4FE7C863A /* Pods */,
-				43464B81B45029F2F54A1F02 /* Frameworks */,
+				5ED25AEC97BE9FA563ECDF99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -397,11 +397,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE3310AB2B1780C1004DB1FF /* Build configuration list for PBXNativeTarget "DigybiteTask" */;
 			buildPhases = (
-				969858C6AB368396EE8438B1 /* [CP] Check Pods Manifest.lock */,
+				35F0E1E3542D5F6BF83B16CE /* [CP] Check Pods Manifest.lock */,
 				FE33107D2B1780C0004DB1FF /* Sources */,
 				FE33107E2B1780C0004DB1FF /* Frameworks */,
 				FE33107F2B1780C0004DB1FF /* Resources */,
-				0D61BCAD2A98CF54B1A19699 /* [CP] Embed Pods Frameworks */,
+				550E7ECED3B1D828126A91EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -416,7 +416,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE3310AE2B1780C1004DB1FF /* Build configuration list for PBXNativeTarget "DigybiteTaskTests" */;
 			buildPhases = (
-				E78BA1BE08CD50177E0FC535 /* [CP] Check Pods Manifest.lock */,
+				C20C295F48522AF52841A912 /* [CP] Check Pods Manifest.lock */,
 				FE3310932B1780C1004DB1FF /* Sources */,
 				FE3310942B1780C1004DB1FF /* Frameworks */,
 				FE3310952B1780C1004DB1FF /* Resources */,
@@ -435,11 +435,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE3310B12B1780C1004DB1FF /* Build configuration list for PBXNativeTarget "DigybiteTaskUITests" */;
 			buildPhases = (
-				4ECBDF2A4BF4EDDCF697A087 /* [CP] Check Pods Manifest.lock */,
+				8D37DB0102983343BD858431 /* [CP] Check Pods Manifest.lock */,
 				FE33109D2B1780C1004DB1FF /* Sources */,
 				FE33109E2B1780C1004DB1FF /* Frameworks */,
 				FE33109F2B1780C1004DB1FF /* Resources */,
-				7DD61483D9CBB9705CE9EB80 /* [CP] Embed Pods Frameworks */,
+				783B4954F29583E1B2525E90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -527,63 +527,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D61BCAD2A98CF54B1A19699 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4ECBDF2A4BF4EDDCF697A087 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DigybiteTask-DigybiteTaskUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7DD61483D9CBB9705CE9EB80 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		969858C6AB368396EE8438B1 /* [CP] Check Pods Manifest.lock */ = {
+		35F0E1E3542D5F6BF83B16CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -605,7 +549,63 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E78BA1BE08CD50177E0FC535 /* [CP] Check Pods Manifest.lock */ = {
+		550E7ECED3B1D828126A91EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask/Pods-DigybiteTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		783B4954F29583E1B2525E90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigybiteTask-DigybiteTaskUITests/Pods-DigybiteTask-DigybiteTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D37DB0102983343BD858431 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigybiteTask-DigybiteTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20C295F48522AF52841A912 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -847,7 +847,7 @@
 		};
 		FE3310AC2B1780C1004DB1FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA28A7A258349CA059F96442 /* Pods-DigybiteTask.debug.xcconfig */;
+			baseConfigurationReference = 5D4EBE120A1CFEA12CE4A726 /* Pods-DigybiteTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -884,7 +884,7 @@
 		};
 		FE3310AD2B1780C1004DB1FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6147261776C1E02CC4FF385 /* Pods-DigybiteTask.release.xcconfig */;
+			baseConfigurationReference = B2D5B1F5C38C2050351A174E /* Pods-DigybiteTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -920,13 +920,14 @@
 		};
 		FE3310AF2B1780C1004DB1FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED5CAF17B67C71ECC7941F11 /* Pods-DigybiteTaskTests.debug.xcconfig */;
+			baseConfigurationReference = B28BC68E68355AF92924D2D4 /* Pods-DigybiteTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BQK86ZW432;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MARKETING_VERSION = 1.0;
@@ -941,7 +942,7 @@
 		};
 		FE3310B02B1780C1004DB1FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72DE91095C43F83022940738 /* Pods-DigybiteTaskTests.release.xcconfig */;
+			baseConfigurationReference = 824F06190893250C760A2770 /* Pods-DigybiteTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -962,7 +963,7 @@
 		};
 		FE3310B22B1780C1004DB1FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B236BA994067086DC03FF450 /* Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig */;
+			baseConfigurationReference = C5712830CCF31C54E18DEE99 /* Pods-DigybiteTask-DigybiteTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -982,7 +983,7 @@
 		};
 		FE3310B32B1780C1004DB1FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB7D2B207816864A377BF8B8 /* Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig */;
+			baseConfigurationReference = 49CB36C172BD00ED56080B8F /* Pods-DigybiteTask-DigybiteTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

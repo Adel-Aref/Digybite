@@ -7,7 +7,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - RxSwift
   - RxSwift (= 6.2.0)
   - SDWebImage
 
@@ -22,6 +21,6 @@ SPEC CHECKSUMS:
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
 
-PODFILE CHECKSUM: 48a470134be0742ea89fc6ffbea7a6083f4c5a4b
+PODFILE CHECKSUM: dc33cc34b40be76ea2bdf73669cb4771b70762d1
 
 COCOAPODS: 1.12.1

@@ -35,4 +35,16 @@ class DigybiteTaskTests: XCTestCase {
         let count = sut.gameListCount
         XCTAssert(count == 1, "games count not equal 1")
     }
+    
+    func testGetGameByIndex() {
+        sut.games = [model]
+        sut.getGameByIndex(at: 0)
+        XCTAssert(firstGame?.genres == [])
+    }
+    
+    func testGetGameByIndex() {
+        sut.games = [model]
+        sut.getGameByIndex(at: 0)
+        XCTAssert(firstGame?.genres == [])
+    }
 }
