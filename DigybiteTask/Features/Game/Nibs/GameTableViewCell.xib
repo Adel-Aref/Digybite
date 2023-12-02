@@ -122,7 +122,7 @@
                 <outlet property="genresLabel" destination="GAK-KQ-HfE" id="CbX-0r-xCe"/>
                 <outlet property="nameLabel" destination="TeY-05-d9p" id="P78-Sk-4UV"/>
             </connections>
-            <point key="canvasLocation" x="300" y="-13"/>
+            <point key="canvasLocation" x="-42" y="-124"/>
         </tableViewCell>
     </objects>
     <resources>
