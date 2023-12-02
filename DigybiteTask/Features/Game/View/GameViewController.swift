@@ -17,8 +17,9 @@ class GameViewController: UIViewController {
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var seeMoreButton: UIButton!
     @IBOutlet weak var widthValueConstraint: NSLayoutConstraint!
-
-    var gameID: Int?
+    
+    var reloadFavroiteList: (()->())?
+    var gameID: Int32?
     private var game: GameModel?
     private let defaultValueLabelHeight: CGFloat = 70
     private var viewModel = GameViewModel()
@@ -40,7 +41,7 @@ class GameViewController: UIViewController {
         case favorite
         case favorited
     }
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBinding()
@@ -95,19 +96,22 @@ class GameViewController: UIViewController {
         gameNameLabel.text = game.name
         gameDescriptionLabel.text = game.description?.htmlToString
         gameImageView.setImage(strUrl: game.backgroundImage, name: "placeHolder")
-        
-        let gameModel: GameRealmModel? = viewModel.storage.object { $0.id == String(game.id) }
-        guard let _ = gameModel else { 
-            favoriteStatus = .favorite
-            return
+        CoreDataHelper.shared.fetchGames { [weak self] games in
+            let gameModel = games.filter { $0.id == game.id }.first
+            guard  gameModel?.isFavorite ?? false else {
+                self?.favoriteStatus = .favorite
+                return
+            }
+            self?.favoriteStatus = .favorited
         }
-        favoriteStatus = .favorited
     }
     
     @IBAction func closeAction(sender: UIButton) {
-        dismiss(animated: true)
+        dismiss(animated: true) { [weak self] in
+            self?.reloadFavroiteList?()
+        }
     }
-
+    
     @IBAction func seeMoreAction(sender: UIButton) {
         switch sender.tag {
         case 0:
@@ -123,12 +127,12 @@ class GameViewController: UIViewController {
         switch favoriteStatus {
         case .favorited:
             guard let game = game else {return}
+            CoreDataHelper.shared.updateGameFavorite(isFavorite: false, id: game.id)
             favoriteStatus = .favorite
-            viewModel.storage.delete(game.mapToGameRealmModel())
         default:
             guard let game = game else {return}
             favoriteStatus = .favorited
-            viewModel.storage.write(game.mapToGameRealmModel())
+            CoreDataHelper.shared.updateGameFavorite(isFavorite: true, id: game.id)
         }
     }
     

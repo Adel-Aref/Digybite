@@ -8,12 +8,12 @@
 import Foundation
 
 extension Endpoint {
-    static func getGameList(page: Int, searchText: String) -> Endpoint {
-        let path = "games?key=\(Environment.apiKey)&page_size=10&page=\(page)&search=\(searchText)"
+    static func getGameList( searchText: String) -> Endpoint {
+        let path = "games?key=\(Environment.apiKey)&page_size=200&page=1&search=\(searchText)"
         return Endpoint(base: Environment.baseURL, path: path)
     }
     
-    static func getGameByGameID(id: Int) -> Endpoint {
+    static func getGameByGameID(id: Int32) -> Endpoint {
         let path = "games/\(id)?key=\(Environment.apiKey)"
         return Endpoint(base: Environment.baseURL, path: path)
     }

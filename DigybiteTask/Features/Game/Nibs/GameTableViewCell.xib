@@ -64,7 +64,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-aP-sMN">
                                 <rect key="frame" x="117" y="12.666666666666668" width="221" height="53.333333333333329"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeY-05-d9p">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeY-05-d9p" customClass="la">
                                         <rect key="frame" x="0.0" y="0.0" width="221" height="26.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
@@ -119,8 +119,8 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="gameImageView" destination="fXw-e3-n6I" id="19P-dI-XtF"/>
-                <outlet property="genresLbl" destination="GAK-KQ-HfE" id="xc8-ta-WMU"/>
-                <outlet property="nameLbl" destination="TeY-05-d9p" id="LW7-3c-UaK"/>
+                <outlet property="genresLabel" destination="GAK-KQ-HfE" id="CbX-0r-xCe"/>
+                <outlet property="nameLabel" destination="TeY-05-d9p" id="P78-Sk-4UV"/>
             </connections>
             <point key="canvasLocation" x="300" y="-13"/>
         </tableViewCell>

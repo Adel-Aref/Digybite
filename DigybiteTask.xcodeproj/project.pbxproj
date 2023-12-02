@@ -24,7 +24,7 @@
 		FE3310BF2B1792DC004DB1FF /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310B92B1792DA004DB1FF /* NetworkClient.swift */; };
 		FE3310C02B1792DC004DB1FF /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310BA2B1792DA004DB1FF /* RequestResult.swift */; };
 		FE3310C12B1792DC004DB1FF /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310BB2B1792DC004DB1FF /* EndPoint.swift */; };
-		FE3310C42B17935E004DB1FF /* RealmHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310C32B17935E004DB1FF /* RealmHandler.swift */; };
+		FE3310C42B17935E004DB1FF /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310C32B17935E004DB1FF /* CoreDataHelper.swift */; };
 		FE3310C92B17982A004DB1FF /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE3310C82B17982A004DB1FF /* Production.xcconfig */; };
 		FE3310CB2B17990C004DB1FF /* Developement.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE3310CA2B17990C004DB1FF /* Developement.xcconfig */; };
 		FE3310CD2B17A072004DB1FF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3310CC2B17A071004DB1FF /* Environment.swift */; };
@@ -49,6 +49,7 @@
 		FE3311452B17F9A5004DB1FF /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3311432B17F9A5004DB1FF /* GameTableViewCell.swift */; };
 		FE3311462B17F9A5004DB1FF /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE3311442B17F9A5004DB1FF /* GameTableViewCell.xib */; };
 		FE3311482B17FE05004DB1FF /* Reactive+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3311472B17FE05004DB1FF /* Reactive+Loading.swift */; };
+		FE46DEE92B1A4B75004023BC /* DigybiteTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE46DEE72B1A4B75004023BC /* DigybiteTask.xcdatamodeld */; };
 		FEC1B28D2B192819009E9564 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1B28B2B192819009E9564 /* GameViewController.swift */; };
 		FEC1B28E2B192819009E9564 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC1B28C2B192819009E9564 /* GameViewController.xib */; };
 		FEC1B2902B1940E4009E9564 /* DigybiteCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1B28F2B1940E4009E9564 /* DigybiteCellView.swift */; };
@@ -102,7 +103,7 @@
 		FE3310B92B1792DA004DB1FF /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		FE3310BA2B1792DA004DB1FF /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
 		FE3310BB2B1792DC004DB1FF /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
-		FE3310C32B17935E004DB1FF /* RealmHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHandler.swift; sourceTree = "<group>"; };
+		FE3310C32B17935E004DB1FF /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		FE3310C82B17982A004DB1FF /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		FE3310CA2B17990C004DB1FF /* Developement.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developement.xcconfig; sourceTree = "<group>"; };
 		FE3310CC2B17A071004DB1FF /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 		FE3311432B17F9A5004DB1FF /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		FE3311442B17F9A5004DB1FF /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 		FE3311472B17FE05004DB1FF /* Reactive+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+Loading.swift"; sourceTree = "<group>"; };
+		FE46DEE82B1A4B75004023BC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FEC1B28B2B192819009E9564 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FEC1B28C2B192819009E9564 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		FEC1B28F2B1940E4009E9564 /* DigybiteCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigybiteCellView.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				FE33108D2B1780C1004DB1FF /* Assets.xcassets */,
 				FE33108F2B1780C1004DB1FF /* LaunchScreen.storyboard */,
 				FE3310922B1780C1004DB1FF /* Info.plist */,
+				FE46DEE72B1A4B75004023BC /* DigybiteTask.xcdatamodeld */,
 			);
 			path = DigybiteTask;
 			sourceTree = "<group>";
@@ -259,7 +262,7 @@
 		FE3310C22B17934E004DB1FF /* Cacher */ = {
 			isa = PBXGroup;
 			children = (
-				FE3310C32B17935E004DB1FF /* RealmHandler.swift */,
+				FE3310C32B17935E004DB1FF /* CoreDataHelper.swift */,
 			);
 			path = Cacher;
 			sourceTree = "<group>";
@@ -631,7 +634,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE3310C42B17935E004DB1FF /* RealmHandler.swift in Sources */,
+				FE3310C42B17935E004DB1FF /* CoreDataHelper.swift in Sources */,
 				FEC1B2922B1940F6009E9564 /* DigybiteShadowView.swift in Sources */,
 				FE3311372B17F23F004DB1FF /* BaseViewModel.swift in Sources */,
 				FE3310F22B17E1D0004DB1FF /* StoryBoardExtension.swift in Sources */,
@@ -653,6 +656,7 @@
 				FE3310C02B1792DC004DB1FF /* RequestResult.swift in Sources */,
 				FE3311452B17F9A5004DB1FF /* GameTableViewCell.swift in Sources */,
 				FE3310E12B17A690004DB1FF /* LoadingView.swift in Sources */,
+				FE46DEE92B1A4B75004023BC /* DigybiteTask.xcdatamodeld in Sources */,
 				FE3310BC2B1792DC004DB1FF /* APIRouter.swift in Sources */,
 				FE3310852B1780C0004DB1FF /* AppDelegate.swift in Sources */,
 				FE3311352B17F185004DB1FF /* GameViewModel.swift in Sources */,
@@ -922,8 +926,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQK86ZW432;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Digybite.task.com.DigybiteTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -942,8 +947,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQK86ZW432;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Digybite.task.com.DigybiteTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -961,6 +967,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQK86ZW432;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -980,6 +987,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BQK86ZW432;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -1032,6 +1040,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE46DEE72B1A4B75004023BC /* DigybiteTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE46DEE82B1A4B75004023BC /* Model.xcdatamodel */,
+			);
+			currentVersion = FE46DEE82B1A4B75004023BC /* Model.xcdatamodel */;
+			path = DigybiteTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE3310792B1780C0004DB1FF /* Project object */;
 }

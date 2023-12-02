@@ -7,7 +7,6 @@ target 'DigybiteTask' do
   
   # Pods for DigybiteTask
   pod 'Alamofire'
-  pod 'RealmSwift', '10.14.0'
   pod 'SDWebImage'
   pod 'RxSwift' , '6.2.0'
   pod 'RxSwift'

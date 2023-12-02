@@ -13,8 +13,8 @@ class GameRepo: Repository {
         networkClient = client
     }
     
-    func getGameList(page: Int, searchText: String, completion: @escaping RepositoryCompletion) {
-        guard let url = Endpoint.getGameList(page: page, searchText: searchText).url else { return }
+    func getGameList( searchText: String, completion: @escaping RepositoryCompletion) {
+        guard let url = Endpoint.getGameList( searchText: searchText).url else { return }
         if let request = makeRequest(url: url, headers: nil, parameters: nil, query: nil, type: .get) {
             getData(withRequest: request,
                     decodingType: DigybiteResponse<[GameModel]>.self,
@@ -22,7 +22,7 @@ class GameRepo: Repository {
         }
     }
     
-    func getGameByGameID(id: Int, completion: @escaping RepositoryCompletion) {
+    func getGameByGameID(id: Int32, completion: @escaping RepositoryCompletion) {
         guard let url = Endpoint.getGameByGameID(id: id).url else { return }
         if let request = makeRequest(url: url, headers: nil, parameters: nil, query: nil, type: .get) {
             getData(withRequest: request,

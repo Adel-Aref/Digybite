@@ -10,8 +10,8 @@ import SDWebImage
 
 class GameTableViewCell: UITableViewCell {
     @IBOutlet weak var gameImageView: UIImageView!
-    @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var genresLbl: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var genresLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,13 +20,21 @@ class GameTableViewCell: UITableViewCell {
         gameImageView.layer.cornerRadius = 8
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        gameImageView.image = nil
+        nameLabel.text = ""
+        genresLabel.text = ""
+        backgroundColor = .clear
+    }
+    
     var game: GameModel? {
         didSet {
-            nameLbl.text = game?.name
+            nameLabel.text = game?.name
             let genres = game?.genres?.map({ genre in
                 return genre.name
             }).reduce("") { $0 + ($1 ?? "") + ", " }
-            genresLbl.text = (game?.genres?.count == 1) ? game?.genres?.first?.name : genres
+            genresLabel.text = (game?.genres?.count == 1) ? game?.genres?.first?.name : genres
             gameImageView.setImage(strUrl: game?.backgroundImage,
                                    name: "placeHolder")
         }

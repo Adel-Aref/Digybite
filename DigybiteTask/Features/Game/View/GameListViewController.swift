@@ -24,28 +24,27 @@ class GameListViewController: BaseController {
     }()
     
     lazy var dataSrc: GamesTableDataSrc = {
-        let dataSrc = GamesTableDataSrc(viewModel: self.viewModel, favroteTabStatus: favroteTabStatus)
+        let dataSrc = GamesTableDataSrc(viewModel: self.viewModel, favroteTabStatus: self.favroteTabStatus)
         dataSrc.onGameSelect = { [weak self] game in
             guard let self = self,
                   let viewController = GameViewController.instantiateFromNib() else { return }
             viewController.gameID = game.id
-            self.present(viewController, animated: true)
-        }
-        dataSrc.onWillDisplay = { [weak self] row in
-            guard let self = self else { return }
-            guard row == self.viewModel.gameListCount - 1 else {
-                return
+            viewController.reloadFavroiteList = { [weak self] in
+                guard self?.favroteTabStatus == .active else {
+                    self?.viewModel.getGamesList()
+                    return
+                }
+                self?.viewModel.getFavoritedList()
             }
-            self.viewModel.getGamesList()
+            CoreDataHelper.shared.updateGameIsRead(isRead: true, id: game.id)
+            self.present(viewController, animated: true)
         }
         return dataSrc
     }()
     
     private var favroteTabStatus: FavroteTabStatus = .disActive {
         didSet {
-            dataSrc.favroteTabStatus = favroteTabStatus
             UIView.animate(withDuration: 0.4) { [weak self] in
-                self?.tableView.reloadData()
                 self?.view.setNeedsLayout()
                 self?.view.layoutIfNeeded()
             }
@@ -57,7 +56,6 @@ class GameListViewController: BaseController {
         setupUI()
         setupTableView()
         setupBinding()
-        viewModel.getGamesList()
     }
     
     private func setupTableView() {
@@ -97,9 +95,12 @@ class GameListViewController: BaseController {
         switch favroteTabStatus {
         case .disActive:
             searchBar.isHidden = true
+            viewModel.games = []
+            viewModel.getFavoritedList()
             favroteTabStatus = .active
         default:
             searchBar.isHidden = false
+            viewModel.getGamesList()
             favroteTabStatus = .disActive
         }
     }
@@ -109,6 +110,7 @@ extension GameListViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard searchText.count >= 3 else {
+            viewModel.getGamesList()
             return
         }
         viewModel.getGamesList(text: searchText)
